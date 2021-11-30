@@ -9,3 +9,4 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ![mobile design](/design/mobile-design.jpg)
 
 ## Live preview
+https://naiiiden.github.io/social-proof-section/
