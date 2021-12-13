@@ -20,41 +20,47 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    max-width: 100%;
     font-family: Spartan;
     font-size: 15px;
 }
 
 h1, h3{/*hero settings*//*hero settings*/
     color: var(--very-dark-magenta);
-    width: 32vh;
+    width: 100vw;
 }
 
 .hero{
-    width: 35vh;
+    width: 83%;
     text-align: center;
-    margin: 3vh;
-    margin-bottom: 5vh;
+    margin: 2rem;
+    margin-bottom: 3.5rem;
 }
 
 .hero h1{
-    margin-bottom: 2vh;
+    margin: auto;
+    margin-bottom: 1rem;
 }/*hero settings*//*hero settings*/
 
 .stars{
-    width: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
     text-align: center;
     line-height: 2;
-    margin: 3vh;
-    margin-bottom: 5vh;
+    margin: auto;
+    margin-bottom: 4rem;
 }
 
 .reviewer{/*reviewer settings*//*reviewer settings*/
-    width: 35vh;
+    width: 90vw;
     border-radius: 10px;
     background-color: var(--very-dark-magenta);
     color: white;
-    padding: 3vh;
-    margin: 3vh;
+    padding: 1.5rem;
+    margin: 3rem;
 }
 
 .bold{
@@ -65,7 +71,7 @@ h1, h3{/*hero settings*//*hero settings*/
     display: flex;
     align-items: center;
     gap: 5%;
-    padding-bottom: 3vh;
+    padding-bottom: 1.5rem;
     
 }
 
@@ -93,29 +99,30 @@ h1, h3{/*hero settings*//*hero settings*/
 
 @media screen and (min-width: 1024px){
     .desktopRow1{
-        width: 100%;
+        text-align: center;
+        width: 70%;
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
+        margin-right: 3.75rem;
     }
     .desktopRow2{
-        margin: 5vh;
-        padding: 5vh;
+        margin: 2rem;
+        padding: 5rem;
         display: flex;
     }
     .colton{
         position: relative;
-        bottom: 3vh;
+        bottom: 2rem;
     }
     .anne{
         position: relative;
-        top: 3vh;
+        top: 2rem;
     }
     .stars{
         position:relative;
         right: 10%;
         text-align: start;
-        line-height: 4;
+        line-height: 4rem;
     }
     .reviews{
         width: 500px;
@@ -145,5 +152,19 @@ h1, h3{/*hero settings*//*hero settings*/
     }
     .hero{
         text-align: start;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        width: 55%;
+        margin: 1rem 0;
+    }
+
+    .hero p {
+        width: 50%;
+    }
+
+    .reviewer {
+        width: 20vw;
     }
 }
